@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/Helvetica-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/Helvetica-BoldOblique.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/Helvetica-light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/Helvetica-Oblique.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/Helvetica.ttf') format('ttf');
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(-55.2%);
+  }
+}
+
+* {
+  font-family: 'Helvetica';
+}
+
+html {
+  background-color: #f5f7f8;
+}
+
+* {
+  scrollbar-color: '#00000063 transparent';
+  scrollbar-width: 'thin';
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 2px 0px;
+  background-color: transparent;
+}
