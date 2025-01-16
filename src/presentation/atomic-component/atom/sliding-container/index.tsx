@@ -6,13 +6,15 @@ interface SlidingContainerProps {
   className?: string;
   height: number;
   speed?: number;
+  reverse?: boolean;
 }
 
 export const SlidingContainer: FC<SlidingContainerProps> = ({
   children,
   className,
   height,
-  speed = 30
+  speed = 30,
+  reverse
 }) => {
   return (
     <div className={'relative overflow-hidden w-full'} style={{ height }}>
@@ -26,13 +28,22 @@ export const SlidingContainer: FC<SlidingContainerProps> = ({
               transform: translateX(-55.2%);
             }
           }
+
+          @keyframes slide2 {
+            0% {
+              transform: translateX(-50%);
+            }
+            100% {
+              transform: translateX(0.2%);
+            }
+          }
         `}
       </style>
 
       <div
         className={`flex absolute w-max h-full ${className}`}
         style={{
-          animation: 'slide linear infinite',
+          animation: `${reverse ? 'slide2' : 'slide'} linear infinite`,
           animationDuration: `${speed}s`
         }}
       >

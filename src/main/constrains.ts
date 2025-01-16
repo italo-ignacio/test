@@ -1,8 +1,8 @@
 export const constrains = {
   footer: '0',
-  header: '1',
+  header: '0',
   pumpFunLink: '',
-  siteName: 'Sylicon Dreams',
+  siteName: 'cats',
   token: '',
   xLink: ''
 };

@@ -27,8 +27,14 @@
   src: url('./assets/Helvetica.ttf') format('ttf');
 }
 
+html,
+body {
+  touch-action: manipulation;
+  overflow: hidden;
+}
 * {
   font-family: 'Helvetica';
+  overflow: hidden;
 }
 
 html {

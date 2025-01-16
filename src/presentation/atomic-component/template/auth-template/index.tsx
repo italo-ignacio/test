@@ -42,7 +42,7 @@ export const AuthTemplate: FC = () => {
 
       {getHeader()}
 
-      <main className={'flex flex-col h-full bg-background min-h-dvh py-6'}>
+      <main className={'flex flex-col h-full bg-background min-h-dvh py-4'}>
         <Outlet />
       </main>
 
