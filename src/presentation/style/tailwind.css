@@ -27,15 +27,6 @@
   src: url('./assets/Helvetica.ttf') format('ttf');
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(-5%);
-  }
-  100% {
-    transform: translateX(-55.2%);
-  }
-}
-
 * {
   font-family: 'Helvetica';
 }

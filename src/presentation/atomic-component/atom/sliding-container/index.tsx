@@ -16,6 +16,19 @@ export const SlidingContainer: FC<SlidingContainerProps> = ({
 }) => {
   return (
     <div className={'relative overflow-hidden w-full'} style={{ height }}>
+      <style>
+        {`
+          @keyframes slide {
+            0% {
+              transform: translateX(-5%);
+            }
+            100% {
+              transform: translateX(-55.2%);
+            }
+          }
+        `}
+      </style>
+
       <div
         className={`flex absolute w-max h-full ${className}`}
         style={{
